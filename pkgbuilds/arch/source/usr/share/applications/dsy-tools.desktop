@@ -1,9 +1,0 @@
-[Desktop Entry]
-Version=1.2.1
-Name=Dsyboot/Dsystem Tools
-Comment=
-Exec=/usr/bin/dsy-tools/dsy
-Icon=/usr/bin/dsy-tools/dsy-tools.png
-Categories=Utilities
-Type=Application
-Terminal=true
