@@ -1,10 +1,10 @@
-# Maintainer: Your Name <youremail@domain.com>
+# Maintainer: Dsyboot <dsyboot@gmail.com>
 pkgname=Dsy-tools
 pkgver=1.2.1
 pkgrel=1
 pkgdesc="Dsy-tools es un programa con algunos scripts"
 arch=(x86_64)
-url="https://github.com/Dsyboot-Dsystem/dsy-tools/"
+url="https://github.com/Dsyboot-Dsystem/dsy-tools.git"
 license=('MIT')
 depends=(figlet)
 makedepends=(git make shc)
@@ -12,13 +12,13 @@ optdepends=()
 provides=(dsy)
 conflicts=()
 changelog=
-source=("git+$url")
+source=("git clone $url")
 noextract=()
 md5sums=('SKIP')
 
 prepare() {
-	cd "$pkgname-$pkgver"
-	patch -p1 -i "$srcdir/$pkgname-$pkgver.patch"
+	cd "dsy-tools/pkgbuilds/arch/source"
+	patch -p1 -i "$source/$pkgname-$pkgver.patch"
 }
 
 build() {
@@ -27,6 +27,5 @@ build() {
 }
 
 package() {
-        cd dsy-tools
-	make DESTDIR="$pkgdir/" install
+    exit 0
 }
