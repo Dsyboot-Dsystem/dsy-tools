@@ -1,4 +1,3 @@
 # ignorar archivos de compilacion de repositorios
 compile.sh
 Packages/deb/x86_64/build
-Paquetes.gz
