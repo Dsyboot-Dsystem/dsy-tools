@@ -1,6 +1,0 @@
-Types: deb
-URIs: https://dl.winehq.org/wine-builds/ubuntu
-Suites: jammy
-Components: main
-Architectures: x86_64
-Signed-By: /usr/share/keyrings/dsystem.key
